@@ -1,0 +1,23 @@
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+.navbar * {
+    font-size: 1.2rem;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand img{
+    width: 120px;
+}
