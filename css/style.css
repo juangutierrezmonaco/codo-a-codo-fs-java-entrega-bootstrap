@@ -94,3 +94,13 @@ footer a:hover {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 992px){
+    .carousel-overlay-container * {
+        font-size: 1rem;
+    }
+
+    .carousel-overlay {
+        width: 80%;
+    }
+}
