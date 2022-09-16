@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 /* Header */
 .navbar * {
     font-size: 1.2rem;
@@ -20,4 +19,71 @@
 
 .navbar-brand img{
     width: 120px;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-overlay-container {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.carousel-overlay {
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    padding-right: 5%;
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Main */
+.dotted {
+    text-decoration: underline dotted;
+}
+
+#formOradorMensajeMensaje::placeholder {
+    font-size: 1.5rem;
+}
+
+.btn-formOrador {
+    color: white;
+    background-color: #96C93E;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(2, 56, 66);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Media queries */
+@media screen and (max-width: 375px){
+    .navbar-brand * {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .navbar-brand * {
+        font-size: 1rem;
+    }
 }
