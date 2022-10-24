@@ -1,9 +1,12 @@
 /* Reset */
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -17,7 +20,7 @@
     align-items: center;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 120px;
 }
 
@@ -54,7 +57,7 @@
     text-decoration: underline dotted;
 }
 
-#formOradorMensajeMensaje::placeholder {
+#formOradorMensaje::placeholder {
     font-size: 1.5rem;
 }
 
@@ -79,13 +82,13 @@ footer a:hover {
 }
 
 /* Media queries */
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
     .navbar-brand * {
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .carousel-overlay-container * {
         font-size: 1rem;
     }
@@ -95,7 +98,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
     .carousel-overlay-container * {
         font-size: 1rem;
     }
@@ -109,6 +112,7 @@ footer a:hover {
 .categorias {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .categoria {
@@ -125,22 +129,39 @@ footer a:hover {
     font-size: 14px;
 }
 
-.categoria:hover, .categoria-selected {
+.categoria:hover,
+.categoria-selected {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-#categoria1:hover, #categoria1.categoria-selected{
+#categoria1:hover,
+#categoria1.categoria-selected {
     color: #0D6EFD;
 }
 
-#categoria2:hover, #categoria2.categoria-selected {
+#categoria2:hover,
+#categoria2.categoria-selected {
     color: #198754;
 }
 
-#categoria3:hover, #categoria3.categoria-selected {
+#categoria3:hover,
+#categoria3.categoria-selected {
     color: #FFC107;
 }
 
 .contenedor {
     max-width: 640px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .categorias {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contenedor {
+        padding: 0 30px;
+    }
 }
