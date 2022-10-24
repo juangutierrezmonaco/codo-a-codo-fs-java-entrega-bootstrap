@@ -1,6 +1,6 @@
 # Trabajo Practico Integrador Front End
 
-Trabajo práctico integrador para la primera parte del curso de JAVA Full stack del programa Codo a Codo.
+Trabajo práctico integrador para la parte de Front End del curso de JAVA Full Stack del programa Codo a Codo.
 
 ### Tecnologías utilizadas:
 
