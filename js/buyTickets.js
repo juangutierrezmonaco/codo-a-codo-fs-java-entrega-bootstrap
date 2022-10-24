@@ -28,7 +28,7 @@ for (const categoria of categorias) {
         selectForm.classList.contains('is-invalid') && selectForm.classList.remove('is-invalid');
 
         // Por último almaceno el valor del select
-        formData = { ...formData, [selectForm.name]: selectedValue };
+        formData = { ...formData, 'Categoría': selectedValue };
     })
 }
 
