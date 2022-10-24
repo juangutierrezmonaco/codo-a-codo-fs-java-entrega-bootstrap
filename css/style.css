@@ -118,25 +118,26 @@ footer a:hover {
     justify-content: space-evenly;
     padding: 0 20px;
     transition: color .3s, box-shadow .3s;
+    cursor: pointer;
 }
 
 .categoria-aclaracion {
     font-size: 14px;
 }
 
-.categoria:hover {
+.categoria:hover, .categoria-selected {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-#categoria1:hover {
+#categoria1:hover, #categoria1.categoria-selected{
     color: #0D6EFD;
 }
 
-#categoria2:hover {
+#categoria2:hover, #categoria2.categoria-selected {
     color: #198754;
 }
 
-#categoria3:hover {
+#categoria3:hover, #categoria3.categoria-selected {
     color: #FFC107;
 }
 
