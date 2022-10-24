@@ -10,20 +10,18 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header class="header">
-
+    <header class="header sticky-top">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-lg-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-lg-5">
             <div class="container-fluid">
                 <!-- Logo -->
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.html">
                     <img src="./assets/images/codoacodo.png" alt="Logo Codo a Codo">
                     <span>Conf Bs As</span>
                 </a>
@@ -44,63 +42,63 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Los oradores</a>
+                            <a class="nav-link" href="#speakers">Los oradores</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">El lugar y la fecha</a>
+                            <a class="nav-link" href="#location">El lugar y la fecha</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Conviértete en orador</a>
+                            <a class="nav-link" href="#joinToSpeakers">Conviértete en orador</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-success" href="#">Comprar tickets</a>
+                            <a class="nav-link text-success" href="./pages/buy_tickets.html">Comprar tickets</a>
                         </li>
                     </ul>
                 </div>
 
             </div>
         </nav>
+    </header>
 
-        <!-- Carousel -->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-overlay-container">
-                <div class="carousel-overlay">
-                    <h2 class="fs-1">Conf Bs As</h2>
-                    <p class="text-end fw-normal lead">
-                        Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
-                        conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a
-                        conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel
-                        que tenemos para ti. Te esperamos!
-                    </p>
+    <!-- Carousel -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-overlay-container">
+            <div class="carousel-overlay">
+                <h2 class="fs-1">Conf Bs As</h2>
+                <p class="text-end fw-normal lead">
+                    Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
+                    conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a
+                    conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel
+                    que tenemos para ti. Te esperamos!
+                </p>
 
-                    <!-- Botones Desktop -->
-                    <div class="d-flex gap-3">
-                        <button type="button" class="btn btn-outline-light btn-lg">Quiero ser orador</button>
-                        <button type="button" class="btn btn-success btn-lg">Comprar tickets</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/images/ba1.jpg" class="d-block w-auto" alt="Imágen de la Ciudad de Buenos Aires">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/images/ba2.jpg" class="d-block w-auto" alt="Imágen de la Ciudad de Buenos Aires">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/images/ba3.jpg" class="d-block w-auto" alt="Imágen de la Ciudad de Buenos Aires">
+                <!-- Botones Desktop -->
+                <div class="d-flex gap-3">
+                    <a href="#joinToSpeakers" type="button" class="btn btn-outline-light btn-lg">Quiero ser orador</a>
+                    <a href="./pages/buy_tickets.html" type="button" class="btn btn-success btn-lg">Comprar tickets</a>
                 </div>
             </div>
         </div>
-    </header>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/images/ba1.jpg" class="d-block w-auto" alt="Imágen de la Ciudad de Buenos Aires">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/ba2.jpg" class="d-block w-auto" alt="Imágen de la Ciudad de Buenos Aires">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/ba3.jpg" class="d-block w-auto" alt="Imágen de la Ciudad de Buenos Aires">
+            </div>
+        </div>
+    </div>
 
     <main class="my-3 d-flex flex-column gap-5">
         <!-- Sección 1 - Oradores -->
-        <section>
+        <section id="speakers">
 
             <div class="d-flex flex-column text-center text-uppercase">
                 <span class="mb-0 p-0 fs-6">Conoce a los</span>
@@ -152,7 +150,7 @@
         </section>
 
         <!-- Sección 2 - Bs As -->
-        <section class="container-fluid">
+        <section class="container-fluid" id="location">
             <div class="row">
                 <div class="col-12 col-lg-6 p-0">
                     <img src="./assets/images/honolulu.jpg" alt="Imágen de Honolulu" class="img-fluid">
@@ -172,7 +170,7 @@
         </section>
 
         <!-- Sección 3 - Conviértete en orador -->
-        <section class="container">
+        <section class="container" id="joinToSpeakers">
             <div class="d-flex flex-column text-center text-uppercase">
                 <span class="mb-0 p-0 fs-6">Conviértete en un</span>
                 <span class="mt-0 p-0 fs-2 fw-semibold">orador</span>
@@ -199,7 +197,7 @@
     
     
                     <div class="col-12 mt-3">
-                        <button type="submit" class="btn btn-formOrador btn-lg w-100 border border-1">Enviar</button>
+                        <button type="submit" class="btn btn-submit btn-lg w-100 border border-1">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -240,6 +238,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 
 </html>
