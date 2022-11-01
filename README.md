@@ -11,6 +11,7 @@ Trabajo práctico integrador para la parte de Front End del curso de JAVA Full S
 - Javascript
 - Sweet Alert 2
 
+
 ### Consigna Front:
 
 Replicar la siguiente página:
